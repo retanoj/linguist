@@ -70,7 +70,8 @@ class FileBlob(BlobHelper):
         if hasattr(self, '_data'):
             return self._data
         try:
-            self._data = open(self.path).read()
+            with open(self.path) as inf:
+                self._data = inf.read()
         except UnicodeDecodeError:
             self._data = ""
         return self._data
