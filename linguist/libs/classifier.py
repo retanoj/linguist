@@ -3,11 +3,14 @@ import os
 import sys
 import math
 from functools import partial
+from functools import reduce
+from future.utils import string_types
+from six import iteritems
 
 is_py27 = sys.version_info >= (2, 7)
 if is_py27:
     from collections import Counter
-from tokenizer import Tokenizer
+from .tokenizer import Tokenizer
 
 
 class Classifier(object):
@@ -79,7 +82,7 @@ class Classifier(object):
         Returns sorted Array of result pairs. Each pair contains the
         String language name and a Float score.
         """
-        languages = languages or db.get('languages', {}).keys()
+        languages = languages or list(db.get('languages', {}).keys())
         return cls(db)._classify(tokens, languages)
 
     def _classify(self, tokens, languages):
@@ -95,7 +98,7 @@ class Classifier(object):
         if tokens is None:
             return []
 
-        if isinstance(tokens, basestring):
+        if isinstance(tokens, string_types):
             tokens = Tokenizer.tokenize(tokens)
 
         scores = {}
@@ -104,11 +107,11 @@ class Classifier(object):
         for language in languages:
             scores[language] = self.tokens_probability(tokens, language) + self.language_probability(language)
             if self.verbosity >= 1:
-                print '%10s = %10.3f + %7.3f = %10.3f\n' % (language,
+                print('%10s = %10.3f + %7.3f = %10.3f\n' % (language,
                                                             self.tokens_probability(tokens, language),
                                                             self.language_probability(language),
-                                                            scores[language])
-        return sorted(scores.iteritems(), key=lambda t: t[1], reverse=True)
+                                                            scores[language]))
+        return sorted(iteritems(scores), key=lambda t: t[1], reverse=True)
 
     def tokens_probability(self, tokens, language):
         """
@@ -162,8 +165,8 @@ class Classifier(object):
         """
         maxlen = max([len(token) for token in tokens])
 
-        print '%ss' % maxlen
-        print '    #' + ''.join(['%10s' for lang in languages])
+        print('%ss' % maxlen)
+        print('    #' + ''.join(['%10s' for lang in languages]))
 
         if not is_py27:
             return
@@ -175,10 +178,10 @@ class Classifier(object):
             minlog = math.log(minlen)
 
             if not reduce(lambda x, y: x and y[1] == arr[0][1], arr, True):
-                print '%*s%5d' % (maxlen, tok, count)
+                print('%*s%5d' % (maxlen, tok, count))
 
                 for ent in arr:
                     if ent[1] == minlen:
-                        print '         -'
+                        print('         -')
                     else:
-                        print '%10.3f' % (math.log(ent[1]) - minlog)
+                        print('%10.3f' % (math.log(ent[1]) - minlog))

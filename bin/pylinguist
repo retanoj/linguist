@@ -14,9 +14,9 @@ usage: pylinguist <path>
 
 def detech_repo(path):
     repo = Repository.from_directory(path)
-    for lang, size in sorted(repo.languages.items(), key=lambda d: d[1], reverse=True):
+    for lang, size in sorted(list(repo.languages.items()), key=lambda d: d[1], reverse=True):
         percentage = round((size / float(repo.size)) * 100, 1)
-        print '%s %s' % (str(percentage) + '%', lang.name)
+        print('%s %s' % (str(percentage) + '%', lang.name))
 
 
 def detech_blob(path):
@@ -28,21 +28,21 @@ def detech_blob(path):
     else:
         type = 'Binary'
 
-    print '%s: %s lines (%s sloc)' % (blob.name, blob.loc, blob.sloc)
-    print '  type: %s' % type
-    print '  language: %s' % (blob.language and blob.language.name)
+    print('%s: %s lines (%s sloc)' % (blob.name, blob.loc, blob.sloc))
+    print('  type: %s' % type)
+    print('  language: %s' % (blob.language and blob.language.name))
 
     if blob.is_large:
-        print '  blob is too large to be shown'
+        print('  blob is too large to be shown')
     if blob.is_generated:
-        print '  appears to be generated source code'
+        print('  appears to be generated source code')
     if blob.is_vendored:
-        print '  appears to be a vendored file'
+        print('  appears to be a vendored file')
 
 
 def detech(path):
     if not os.path.exists(path):
-        print '%s does not exist.'
+        print('%s does not exist.')
         return
 
     if os.path.isdir(path):

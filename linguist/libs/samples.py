@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 import json
+from io import open
 from os import listdir
 from os.path import realpath, dirname, exists, join, splitext
 from collections import defaultdict
 
-from classifier import Classifier
-from md5 import MD5
+from .classifier import Classifier
+from .md5 import MD5
 
 DIR = dirname(realpath(__file__))
 ROOT = join(dirname(dirname(DIR)), "samples")
@@ -46,7 +47,7 @@ class Samples(object):
                     _extname = splitext(filename)[1]
                     path = join(dirname, filename)
                     if _extname == '':
-                        raise '%s is missing an extension, maybe it belongs in filenames/subdir' % path
+                        raise Exception('%s is missing an extension, maybe it belongs in filenames/subdir' % path)
                     func({'path': path,
                           'language': category,
                           'extname': _extname})
@@ -75,7 +76,10 @@ class Samples(object):
                 db['filenames'][_langname].append(_filename)
                 db['filenames'][_langname].sort()
 
-            data = open(sample['path']).read()
+            try:
+                data = open(sample['path']).read()
+            except:
+                data = ""
             Classifier.train(db, _langname, data)
 
         cls.each(_learn)

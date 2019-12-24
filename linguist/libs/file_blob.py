@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 
 from os import stat
-from blob_helper import BlobHelper
+from io import open
+from .blob_helper import BlobHelper
 
 
 class FileBlob(BlobHelper):
@@ -68,7 +69,10 @@ class FileBlob(BlobHelper):
         """
         if hasattr(self, '_data'):
             return self._data
-        self._data = file(self.path).read()
+        try:
+            self._data = open(self.path).read()
+        except UnicodeDecodeError:
+            self._data = ""
         return self._data
 
     @property

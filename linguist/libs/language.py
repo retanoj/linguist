@@ -1,24 +1,26 @@
 # -*- coding: utf-8 -*-
 
 import re
-import urllib
+from urllib.parse import quote
 from os.path import realpath, dirname, basename, splitext, join
 from collections import defaultdict
 
 import yaml
 from pygments import lexers
 from pygments import highlight
-from pygments.formatters import HtmlFormatter
+from pygments.formatters.html import HtmlFormatter
+from future.utils import with_metaclass
+from six import iteritems
 
-from classifier import Classifier
-from samples import DATA
+from .classifier import Classifier
+from .samples import DATA
 
 DIR = dirname(realpath(__file__))
 POPULAR_PATH = join(DIR, "popular.yml")
 LANGUAGES_PATH = join(DIR, "languages.yml")
 
-POPULAR = yaml.load(open(POPULAR_PATH))
-LANGUAGES = yaml.load(open(LANGUAGES_PATH))
+POPULAR = yaml.load(open(POPULAR_PATH), Loader=yaml.FullLoader)
+LANGUAGES = yaml.load(open(LANGUAGES_PATH), Loader=yaml.FullLoader)
 
 
 class ItemMeta(type):
@@ -26,15 +28,13 @@ class ItemMeta(type):
         return cls.find_by_name(item)
 
 
-class Language(object):
+class Language(with_metaclass(ItemMeta, object)):
     """
     Language names that are recognizable by GitHub. Defined languages
     can be highlighted, searched and listed under the Top Languages page.
 
     Languages are defined in `lib/linguist/languages.yml`.
     """
-
-    __metaclass__ = ItemMeta
     languages = []
     index = {}
     name_index = {}
@@ -147,6 +147,9 @@ class Language(object):
     def __eq__(self, target):
         return self.name == target.name and self.extensions == target.extensions
 
+    def __hash__(self):
+        return hash(id(self))
+
     @classmethod
     def find_by_name(cls, name):
         """
@@ -203,14 +206,14 @@ class Language(object):
     def colors(cls):
         if cls._colors:
             return cls._colors
-        cls._colors = sorted(filter(lambda l: l.color, cls.all()), key=lambda l: l.name.lower())
+        cls._colors = sorted([l for l in cls.all() if l.color], key=lambda l: l.name.lower())
         return cls._colors
 
     @classmethod
     def ace_modes(cls):
         if cls._ace_modes:
             return cls._ace_modes
-        cls._ace_modes = sorted(filter(lambda l: l.ace_mode, cls.all()), key=lambda l: l.name.lower())
+        cls._ace_modes = sorted([l for l in cls.all() if l.ace_mode], key=lambda l: l.name.lower())
         return cls._ace_modes
 
     @classmethod
@@ -239,7 +242,7 @@ class Language(object):
         classified with other languages that have shebang scripts.
         """
         extname = splitext(name)[1]
-        if not extname and mode and (int(mode, 8) & 05 == 05):
+        if not extname and mode and (int(mode, 8) & 0o5 == 0o5):
             name += ".script!"
 
         possible_languages = cls.find_by_filename(name)
@@ -314,13 +317,13 @@ class Language(object):
 
         Returns the escaped String.
         """
-        return urllib.quote(self.name, '')
+        return quote(self.name, '')
 
 extensions = DATA['extnames']
 filenames = DATA['filenames']
 popular = POPULAR
 
-for name, options in sorted(LANGUAGES.iteritems(), key=lambda k: k[0]):
+for name, options in sorted(iteritems(LANGUAGES), key=lambda k: k[0]):
     options['extensions'] = options.get('extensions', [])
     options['filenames'] = options.get('filenames', [])
 

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import re
-import urllib
+from urllib.parse import quote_plus
 from os.path import realpath, dirname, splitext, basename, join
 
 import yaml
@@ -9,16 +9,17 @@ import mime
 import charlockholmes
 from pygments import lexers
 from pygments import highlight
-from pygments.formatters import HtmlFormatter
+from pygments.formatters.html import HtmlFormatter
+from future.utils import string_types
 
-from language import Language
-from generated import Generated
+from .language import Language
+from .generated import Generated
 
 MEGABYTE = 1024 * 1024
 
 DIR = dirname(realpath(__file__))
 VENDOR_PATH = join(DIR, "vendor.yml")
-VENDORED_PATHS = yaml.load(open(VENDOR_PATH))
+VENDORED_PATHS = yaml.load(open(VENDOR_PATH), Loader=yaml.FullLoader)
 VENDORED_REGEXP = re.compile('|'.join(VENDORED_PATHS))
 
 
@@ -136,7 +137,7 @@ class BlobHelper(object):
         elif self.name is None:
             return 'attachment'
         else:
-            return 'attachment; filename=%s' % urllib.quote_plus(basename(self.name))
+            return 'attachment; filename=%s' % quote_plus(basename(self.name))
 
     @property
     def encoding(self):
@@ -156,7 +157,7 @@ class BlobHelper(object):
             return self._detect_encoding
 
         if self.data:
-            self._detect_encoding = charlockholmes.detect(self.data)
+            self._detect_encoding = charlockholmes.detect(self.data.encode('utf-8', 'ignore'))
             return self._detect_encoding
 
     @property
@@ -248,7 +249,7 @@ class BlobHelper(object):
 
         Returns Integer
         """
-        return len(filter(re.compile('\S').search, self.lines))
+        return len(list(filter(re.compile('\S').search, self.lines)))
 
     @property
     def is_safe_to_colorize(self):
@@ -353,7 +354,7 @@ class BlobHelper(object):
             return self._language
 
         _data = getattr(self, '_data', False)
-        if _data and isinstance(_data, basestring):
+        if _data and isinstance(_data, string_types):
             data = _data
         else:
             data = lambda: '' if (self.is_binary_mime_type or self.is_binary) else self.data
