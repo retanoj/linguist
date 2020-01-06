@@ -84,19 +84,6 @@ class TestTokenizer(LinguistTestBase):
         assert r2 == self.tokenize("Objective-C/hello.m", True)
         assert "#import @implementation Foo @end".split() == self.tokenize("Objective-C/Foo.m", True)
 
-    def test_shebang(self):
-        assert "SHEBANG#!sh" == self.tokenize("Shell/sh.script!", True)[0]
-        assert "SHEBANG#!bash" == self.tokenize("Shell/bash.script!", True)[0]
-        assert "SHEBANG#!zsh" == self.tokenize("Shell/zsh.script!", True)[0]
-        assert "SHEBANG#!perl" == self.tokenize("Perl/perl.script!", True)[0]
-        assert "SHEBANG#!python" == self.tokenize("Python/python.script!", True)[0]
-        assert "SHEBANG#!ruby" == self.tokenize("Ruby/ruby.script!", True)[0]
-        assert "SHEBANG#!ruby" == self.tokenize("Ruby/ruby2.script!", True)[0]
-        assert "SHEBANG#!node" == self.tokenize("JavaScript/js.script!", True)[0]
-        assert "SHEBANG#!php" == self.tokenize("PHP/php.script!", True)[0]
-        assert "SHEBANG#!escript" == self.tokenize("Erlang/factorial.script!", True)[0]
-        assert "echo" == self.tokenize("Shell/invalid-shebang.sh", True)[0]
-
     def test_javscript_tokens(self):
         r = ["(", "function", "(", ")", "{", "console.log", "(", ")", ";", "}", ")",
              ".call", "(", "this", ")", ";"]
