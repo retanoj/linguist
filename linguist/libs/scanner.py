@@ -523,7 +523,7 @@ class Scanner(object):
     
   def skip_lines(self, n=1):
     """ Skip the given number of lines and return the number of lines consumed """
-    for i in xrange(n):
+    for i in range(n):
       if not self.skip_until('.^', re.M|re.S): return i
     return i+1
     
