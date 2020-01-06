@@ -1,13 +1,5 @@
 {
   "extnames": {
-    "PLpgSQL": [
-      ".pgsql",
-      ".sql"
-    ],
-    "OCaml": [
-      ".eliom",
-      ".ml"
-    ],
     "Scheme": [
       ".sch",
       ".sld",
@@ -21,15 +13,8 @@
       ".dlm",
       ".pro"
     ],
-    "XPages": [
-      ".metadata",
-      ".xsp-config"
-    ],
     "Terra": [
       ".t"
-    ],
-    "RMarkdown": [
-      ".rmd"
     ],
     "Inno Setup": [
       ".iss"
@@ -37,9 +22,6 @@
     "Pike": [
       ".pike",
       ".pmod"
-    ],
-    "Pod": [
-      ".pod"
     ],
     "edn": [
       ".edn"
@@ -51,15 +33,6 @@
     "Emacs Lisp": [
       ".desktop",
       ".el"
-    ],
-    "P4": [
-      ".p4"
-    ],
-    "mcfunction": [
-      ".mcfunction"
-    ],
-    "SRecode Template": [
-      ".srt"
     ],
     "Pascal": [
       ".dpr",
@@ -104,9 +77,6 @@
     "Golo": [
       ".golo"
     ],
-    "Jison Lex": [
-      ".jisonlex"
-    ],
     "Formatted": [
       ".for",
       ".fs"
@@ -124,15 +94,8 @@
       ".ipp",
       ".re"
     ],
-    "Grace": [
-      ".grace"
-    ],
     "HyPhy": [
       ".bf"
-    ],
-    "MAXScript": [
-      ".mcr",
-      ".ms"
     ],
     "Pony": [
       ".pony"
@@ -141,61 +104,8 @@
       ".hlean",
       ".lean"
     ],
-    "Opal": [
-      ".opal"
-    ],
-    "Unix Assembly": [
-      ".ms",
-      ".s"
-    ],
-    "Glyph Bitmap Distribution Format": [
-      ".bdf"
-    ],
-    "SuperCollider": [
-      ".sc",
-      ".scd"
-    ],
     "MoonScript": [
       ".moon"
-    ],
-    "Zig": [
-      ".zig"
-    ],
-    "Propeller Spin": [
-      ".spin"
-    ],
-    "Roff Manpage": [
-      ".1",
-      ".1in",
-      ".1m",
-      ".1x",
-      ".2",
-      ".3",
-      ".3in",
-      ".3m",
-      ".3p",
-      ".3pm",
-      ".3qt",
-      ".3x",
-      ".4",
-      ".5",
-      ".6",
-      ".7",
-      ".8",
-      ".9",
-      ".man",
-      ".mdoc"
-    ],
-    "Unity3D Asset": [
-      ".anim",
-      ".asset",
-      ".mask",
-      ".mat",
-      ".meta",
-      ".prefab"
-    ],
-    "nanorc": [
-      ".nanorc"
     ],
     "Asymptote": [
       ".asy"
@@ -210,21 +120,8 @@
       ".lbx",
       ".toc"
     ],
-    "GDB": [
-      ".gdb",
-      ".gdbinit"
-    ],
-    "Brightscript": [
-      ".brs"
-    ],
     "Apex": [
       ".cls"
-    ],
-    "Jison": [
-      ".jison"
-    ],
-    "Svelte": [
-      ".svelte"
     ],
     "HTML+ERB": [
       ".deface",
@@ -236,93 +133,26 @@
     "UnrealScript": [
       ".uc"
     ],
-    "Riot": [
-      ".riot"
-    ],
     "Go": [
       ".go"
-    ],
-    "Vim Snippet": [
-      ".snip",
-      ".snippets"
     ],
     "ECLiPSe": [
       ".ecl"
     ],
-    "POV-Ray SDL": [
-      ".inc",
-      ".pov"
-    ],
     "Racket": [
       ".scrbl"
-    ],
-    "LOLCODE": [
-      ".lol"
-    ],
-    "Nix": [
-      ".nix"
-    ],
-    "API Blueprint": [
-      ".apib"
     ],
     "Zephir": [
       ".zep"
     ],
-    "X PixMap": [
-      ".pm",
-      ".xpm"
-    ],
-    "Fstar": [
-      ".fst"
-    ],
-    "Nim": [
-      ".cfg",
-      ".nim",
-      ".nimble",
-      ".nims"
-    ],
-    "Graphviz (DOT)": [
-      ".DOT",
-      ".dot"
-    ],
-    "Gerber Image": [
-      ".gbl",
-      ".gbo",
-      ".gbp",
-      ".gbr",
-      ".gbs",
-      ".gko",
-      ".gml",
-      ".gtl",
-      ".gto",
-      ".gtp",
-      ".gts"
-    ],
-    "CoNLL-U": [
-      ".conllu"
-    ],
-    "Muse": [
-      ".muse"
-    ],
     "Turtle": [
       ".ttl"
-    ],
-    "SystemVerilog": [
-      ".sv",
-      ".svh",
-      ".vh"
     ],
     "SPARQL": [
       ".sparql"
     ],
     "CLIPS": [
       ".clp"
-    ],
-    "SugarSS": [
-      ".sss"
-    ],
-    "CSON": [
-      ".cson"
     ],
     "Omgrofl": [
       ".omgrofl"
@@ -335,32 +165,15 @@
     "NCL": [
       ".ncl"
     ],
-    "Pep8": [
-      ".pep"
-    ],
-    "YANG": [
-      ".yang"
-    ],
-    "Windows Registry Entries": [
-      ".reg"
-    ],
     "Lex": [
       ".l"
     ],
     "QML": [
       ".qbs"
     ],
-    "GN": [
-      ".gn",
-      ".gni"
-    ],
     "CMake": [
       ".cmake",
       ".in"
-    ],
-    "Public Key": [
-      ".asc",
-      ".pub"
     ],
     "AngelScript": [
       ".as"
@@ -368,17 +181,11 @@
     "Alloy": [
       ".als"
     ],
-    "Apollo Guidance Computer": [
-      ".agc"
-    ],
     "GDScript": [
       ".gd"
     ],
     "XQuery": [
       ".xqm"
-    ],
-    "KiCad Schematic": [
-      ".sch"
     ],
     "Python": [
       ".bzl",
@@ -392,12 +199,6 @@
       ".pyp",
       ".rpy",
       ".spec"
-    ],
-    "CSS": [
-      ".css"
-    ],
-    "Metal": [
-      ".metal"
     ],
     "FLUX": [
       ".fx"
@@ -419,21 +220,8 @@
     "LFE": [
       ".lfe"
     ],
-    "ASN.1": [
-      ".asn"
-    ],
     "PicoLisp": [
       ".l"
-    ],
-    "CartoCSS": [
-      ".mss"
-    ],
-    "Marko": [
-      ".marko"
-    ],
-    "SMT": [
-      ".smt",
-      ".smt2"
     ],
     "World of Warcraft Addon Data": [
       ".toc"
@@ -459,21 +247,12 @@
     "Chapel": [
       ".chpl"
     ],
-    "HolyC": [
-      ".HC"
-    ],
-    "OpenStep Property List": [
-      ".plist"
-    ],
     "Dart": [
       ".dart"
     ],
     "Makefile": [
       ".d",
       ".make"
-    ],
-    "Org": [
-      ".org"
     ],
     "Shell": [
       ".bash",
@@ -500,15 +279,6 @@
     "Groovy Server Pages": [
       ".gsp"
     ],
-    "Modula-3": [
-      ".i3",
-      ".ig",
-      ".m3",
-      ".mg"
-    ],
-    "MTML": [
-      ".mtml"
-    ],
     "Slice": [
       ".ice"
     ],
@@ -522,12 +292,6 @@
       ".cu",
       ".cuh"
     ],
-    "Altium Designer": [
-      ".OutJob",
-      ".PcbDoc",
-      ".PrjPcb",
-      ".SchDoc"
-    ],
     "NetLinx+ERB": [
       ".erb"
     ],
@@ -536,12 +300,6 @@
     ],
     "SCSS": [
       ".scss"
-    ],
-    "Rich Text Format": [
-      ".rtf"
-    ],
-    "EQ": [
-      ".eq"
     ],
     "TSX": [
       ".tsx"
@@ -553,13 +311,6 @@
       ".pl",
       ".pm",
       ".t"
-    ],
-    "TypeScript": [
-      ".ts"
-    ],
-    "LookML": [
-      ".lkml",
-      ".lookml"
     ],
     "Smalltalk": [
       ".cs",
@@ -574,23 +325,8 @@
       ".pwn",
       ".sma"
     ],
-    "Stylus": [
-      ".styl"
-    ],
-    "Vue": [
-      ".vue"
-    ],
-    "ShellSession": [
-      ".sh-session"
-    ],
     "Rust": [
       ".rs"
-    ],
-    "FreeMarker": [
-      ".ftl"
-    ],
-    "WebVTT": [
-      ".vtt"
     ],
     "Gosu": [
       ".gs",
@@ -598,35 +334,12 @@
       ".gsx",
       ".vark"
     ],
-    "Ox": [
-      ".ox",
-      ".oxh",
-      ".oxo"
-    ],
-    "Dogescript": [
-      ".djs"
-    ],
-    "Dhall": [
-      ".dhall"
-    ],
     "Pug": [
       ".jade",
       ".pug"
     ],
-    "PureScript": [
-      ".purs"
-    ],
-    "PostCSS": [
-      ".pcss"
-    ],
-    "dircolors": [
-      ".dircolors"
-    ],
     "Modula-2": [
       ".mod"
-    ],
-    "Prisma": [
-      ".prisma"
     ],
     "Erlang": [
       ".erl",
@@ -640,15 +353,8 @@
       ".ec"
     ],
     "VBA": [
-      ".bas",
       ".cls",
       ".vba"
-    ],
-    "ZAP": [
-      ".zap"
-    ],
-    "Edje Data Collection": [
-      ".edc"
     ],
     "Moocode": [
       ".moo"
@@ -671,22 +377,14 @@
     "RPM Spec": [
       ".spec"
     ],
-    "YARA": [
-      ".yar",
-      ".yara"
-    ],
     "LSL": [
       ".lsl",
       ".lslp"
-    ],
-    "Kit": [
-      ".kit"
     ],
     "Liquid": [
       ".liquid"
     ],
     "Eagle": [
-      ".brd",
       ".sch"
     ],
     "XProc": [
@@ -695,15 +393,9 @@
     "TSQL": [
       ".sql"
     ],
-    "Click": [
-      ".click"
-    ],
     "Logos": [
       ".x",
       ".xm"
-    ],
-    "Common Workflow Language": [
-      ".cwl"
     ],
     "Mathematica": [
       ".m",
@@ -713,42 +405,24 @@
       ".wlt"
     ],
     "Hack": [
-      ".hack",
       ".hh",
-      ".hhi",
       ".php"
-    ],
-    "Nextflow": [
-      ".nf"
     ],
     "MQL5": [
       ".mq5",
       ".mqh"
     ],
-    "OpenSCAD": [
-      ".scad"
-    ],
     "Java": [
       ".java"
     ],
-    "HTML+Razor": [
-      ".cshtml",
-      ".razor"
-    ],
     "Bluespec": [
       ".bsv"
-    ],
-    "EJS": [
-      ".ejs"
     ],
     "desktop": [
       ".desktop"
     ],
     "Diff": [
       ".patch"
-    ],
-    "JSONiq": [
-      ".jq"
     ],
     "Elm": [
       ".elm"
@@ -770,50 +444,22 @@
       ".cr"
     ],
     "Component Pascal": [
-      ".cp",
-      ".cps"
+      ".cp"
     ],
     "AspectJ": [
       ".aj"
     ],
-    "SQF": [
-      ".hqf",
-      ".sqf"
-    ],
     "EBNF": [
       ".ebnf"
-    ],
-    "DataWeave": [
-      ".dwl"
-    ],
-    "DNS Zone": [
-      ".arpa",
-      ".zone"
-    ],
-    "GAML": [
-      ".gaml"
-    ],
-    "WebIDL": [
-      ".webidl"
     ],
     "Xtend": [
       ".xtend"
     ],
     "SQLPL": [
-      ".db2",
       ".sql"
     ],
     "Ren'Py": [
       ".rpy"
-    ],
-    "Regular Expression": [
-      ".regex",
-      ".regexp"
-    ],
-    "KiCad Layout": [
-      ".kicad_mod",
-      ".kicad_pcb",
-      ".kicad_wks"
     ],
     "Haskell": [
       ".hs"
@@ -824,9 +470,6 @@
       ".php",
       ".phps"
     ],
-    "M4Sugar": [
-      ".m4"
-    ],
     "DTrace": [
       ".d"
     ],
@@ -836,24 +479,9 @@
     "Frege": [
       ".fr"
     ],
-    "Pod 6": [
-      ".pod"
-    ],
-    "NetLinx": [
-      ".axi",
-      ".axs"
-    ],
     "MQL4": [
       ".mq4",
       ".mqh"
-    ],
-    "Xojo": [
-      ".xojo_code",
-      ".xojo_menu",
-      ".xojo_report",
-      ".xojo_script",
-      ".xojo_toolbar",
-      ".xojo_window"
     ],
     "XS": [
       ".xs"
@@ -862,12 +490,6 @@
       ".fcgi",
       ".p8",
       ".pd_lua"
-    ],
-    "Zimpl": [
-      ".zmpl"
-    ],
-    "Ignore List": [
-      ".gitignore"
     ],
     "Ragel": [
       ".rl"
@@ -895,7 +517,6 @@
       ".jsproj",
       ".mdpolicy",
       ".mjml",
-      ".mm",
       ".mod",
       ".natvis",
       ".ncl",
@@ -913,7 +534,6 @@
       ".shproj",
       ".storyboard",
       ".targets",
-      ".ts",
       ".tsx",
       ".ux",
       ".vbproj",
@@ -926,20 +546,6 @@
       ".xml",
       ".xspec"
     ],
-    "Latte": [
-      ".latte"
-    ],
-    "RUNOFF": [
-      ".RNH",
-      ".rnh",
-      ".rno"
-    ],
-    "MLIR": [
-      ".mlir"
-    ],
-    "HTML+EEX": [
-      ".eex"
-    ],
     "Max": [
       ".maxhelp",
       ".maxpat",
@@ -949,15 +555,10 @@
       ".thrift"
     ],
     "Blade": [
-      ".blade",
       ".php"
     ],
     "Gradle": [
       ".gradle"
-    ],
-    "Module Management System": [
-      ".mmk",
-      ".mms"
     ],
     "Parrot Internal Representation": [
       ".pir"
@@ -978,16 +579,6 @@
     "Stan": [
       ".stan"
     ],
-    "Wavefront Material": [
-      ".mtl"
-    ],
-    "Red": [
-      ".red",
-      ".reds"
-    ],
-    "ZIL": [
-      ".zil"
-    ],
     "PowerShell": [
       ".ps1",
       ".psd1",
@@ -999,31 +590,11 @@
     "Tea": [
       ".tea"
     ],
-    "HiveQL": [
-      ".hql",
-      ".q"
-    ],
     "OpenCL": [
       ".cl"
     ],
     "Jasmin": [
       ".j"
-    ],
-    "UrWeb": [
-      ".ur",
-      ".urs"
-    ],
-    "Motorola 68K Assembly": [
-      ".X68"
-    ],
-    "XML Property List": [
-      ".plist",
-      ".stTheme",
-      ".tmCommand",
-      ".tmLanguage",
-      ".tmPreferences",
-      ".tmSnippet",
-      ".tmTheme"
     ],
     "Clean": [
       ".dcl",
@@ -1041,18 +612,10 @@
     "Tcl": [
       ".tm"
     ],
-    "Pic": [
-      ".chem",
-      ".pic"
-    ],
-    "Jupyter Notebook": [
-      ".ipynb"
-    ],
     "Mask": [
       ".mask"
     ],
     "AMPL": [
-      ".ampl",
       ".mod"
     ],
     "INI": [
@@ -1060,9 +623,6 @@
       ".lektorproject",
       ".pro",
       ".properties"
-    ],
-    "FIGlet Font": [
-      ".flf"
     ],
     "LTspice Symbol": [
       ".asy"
@@ -1091,47 +651,22 @@
     "BibTeX": [
       ".bib"
     ],
-    "YASnippet": [
-      ".yasnippet"
-    ],
     "GAP": [
       ".g",
       ".gd",
       ".gi",
       ".tst"
     ],
-    "REXX": [
-      ".pprx",
-      ".rexx"
-    ],
-    "PureBasic": [
-      ".pb",
-      ".pbi"
-    ],
-    "TLA": [
-      ".tla"
-    ],
     "xBase": [
       ".ch",
       ".prg",
       ".prw"
     ],
-    "Jolie": [
-      ".iol",
-      ".ol"
-    ],
     "AutoHotkey": [
       ".ahk"
     ],
-    "HTML+ECR": [
-      ".ecr"
-    ],
     "SaltStack": [
       ".sls"
-    ],
-    "WebAssembly": [
-      ".wast",
-      ".wat"
     ],
     "Graph Modeling Language": [
       ".gml"
@@ -1139,22 +674,8 @@
     "Verilog": [
       ".v"
     ],
-    "Git Config": [
-      ".gitconfig"
-    ],
-    "mIRC Script": [
-      ".mrc"
-    ],
     "Cool": [
       ".cl"
-    ],
-    "AsciiDoc": [
-      ".adoc",
-      ".asc",
-      ".asciidoc"
-    ],
-    "Cycript": [
-      ".cy"
     ],
     "Handlebars": [
       ".handlebars",
@@ -1166,32 +687,18 @@
     "Cirru": [
       ".cirru"
     ],
-    "Nearley": [
-      ".ne"
-    ],
     "Scala": [
       ".kojo",
-      ".sbt",
-      ".sc"
+      ".sbt"
     ],
     "HCL": [
-      ".hcl",
-      ".tf",
-      ".tfvars",
       ".workflow"
     ],
     "Swift": [
       ".swift"
     ],
-    "GraphQL": [
-      ".graphql",
-      ".graphqls"
-    ],
     "Genie": [
       ".gs"
-    ],
-    "CSV": [
-      ".csv"
     ],
     "MATLAB": [
       ".m"
@@ -1200,32 +707,8 @@
       ".fs"
     ],
     "Roff": [
-      ".1",
-      ".1in",
-      ".1m",
-      ".1x",
-      ".2",
-      ".3",
-      ".3in",
-      ".3m",
-      ".3p",
-      ".3pm",
-      ".3qt",
-      ".3x",
-      ".4",
-      ".5",
-      ".6",
-      ".7",
-      ".8",
-      ".9",
       ".l",
-      ".man",
-      ".mdoc",
-      ".ms",
-      ".n",
-      ".nr",
-      ".rno",
-      ".tmac"
+      ".n"
     ],
     "SAS": [
       ".sas"
@@ -1236,9 +719,6 @@
     ],
     "Turing": [
       ".t"
-    ],
-    "Jsonnet": [
-      ".jsonnet"
     ],
     "Oxygene": [
       ".oxygene"
@@ -1260,17 +740,11 @@
     "DM": [
       ".dm"
     ],
-    "X10": [
-      ".x10"
-    ],
     "Nemerle": [
       ".n"
     ],
     "PogoScript": [
       ".pogo"
-    ],
-    "JSON5": [
-      ".json5"
     ],
     "LiveScript": [
       ".ls"
@@ -1280,22 +754,6 @@
     ],
     "NL": [
       ".nl"
-    ],
-    "KiCad Legacy Layout": [
-      ".brd"
-    ],
-    "EmberScript": [
-      ".em"
-    ],
-    "PigLatin": [
-      ".pig"
-    ],
-    "JFlex": [
-      ".flex",
-      ".jflex"
-    ],
-    "Uno": [
-      ".uno"
     ],
     "Vim script": [
       ".vba",
@@ -1321,15 +779,11 @@
       ".reb",
       ".rebol"
     ],
-    "M4": [
-      ".m4"
-    ],
     "Literate Agda": [
       ".lagda"
     ],
     "MUF": [
-      ".m",
-      ".muf"
+      ".m"
     ],
     "YAML": [
       ".YAML-tmLanguage",
@@ -1340,9 +794,6 @@
       ".syntax",
       ".yml"
     ],
-    "Cabal Config": [
-      ".cabal"
-    ],
     "CWeb": [
       ".w"
     ],
@@ -1352,24 +803,14 @@
       ".for"
     ],
     "G-code": [
-      ".cnc",
       ".g"
     ],
     "Monkey": [
       ".monkey",
       ".monkey2"
     ],
-    "ZenScript": [
-      ".zs"
-    ],
-    "wdl": [
-      ".wdl"
-    ],
     "Proguard": [
       ".pro"
-    ],
-    "Pickle": [
-      ".pkl"
     ],
     "Nit": [
       ".nit"
@@ -1378,14 +819,8 @@
       ".b",
       ".m"
     ],
-    "Clarion": [
-      ".clw"
-    ],
     "KRL": [
       ".krl"
-    ],
-    "Rascal": [
-      ".rsc"
     ],
     "Julia": [
       ".jl"
@@ -1400,18 +835,8 @@
     ],
     "PLSQL": [
       ".ddl",
-      ".pck",
-      ".pkb",
-      ".pks",
-      ".plsql",
       ".prc",
       ".sql"
-    ],
-    "Open Policy Agent": [
-      ".rego"
-    ],
-    "Oz": [
-      ".oz"
     ],
     "OpenEdge ABL": [
       ".cls",
@@ -1419,14 +844,10 @@
       ".w"
     ],
     "SourcePawn": [
-      ".inc",
-      ".sp"
+      ".inc"
     ],
     "ObjectScript": [
       ".cls"
-    ],
-    "Web Ontology Language": [
-      ".owl"
     ],
     "Groovy": [
       ".grt",
@@ -1444,20 +865,8 @@
     "Protocol Buffer": [
       ".proto"
     ],
-    "Creole": [
-      ".creole"
-    ],
-    "Ring": [
-      ".ring"
-    ],
     "TI Program": [
       ".txt"
-    ],
-    "X BitMap": [
-      ".xbm"
-    ],
-    "DIGITAL Command Language": [
-      ".com"
     ],
     "ColdFusion CFC": [
       ".cfc"
@@ -1465,11 +874,7 @@
     "wisp": [
       ".wisp"
     ],
-    "RAML": [
-      ".raml"
-    ],
     "NewLisp": [
-      ".lisp",
       ".lsp",
       ".nl"
     ],
@@ -1478,11 +883,6 @@
     ],
     "XSLT": [
       ".xslt"
-    ],
-    "ATS": [
-      ".dats",
-      ".hats",
-      ".sats"
     ],
     "JavaScript": [
       ".es",
@@ -1495,17 +895,11 @@
       ".xsjs",
       ".xsjslib"
     ],
-    "Papyrus": [
-      ".psc"
-    ],
     "Csound": [
       ".orc"
     ],
     "Yacc": [
       ".yy"
-    ],
-    "Texinfo": [
-      ".texi"
     ],
     "F#": [
       ".fs"
@@ -1516,36 +910,23 @@
     "ApacheConf": [
       ".vhost"
     ],
-    "Wollok": [
-      ".wlk"
-    ],
     "BitBake": [
       ".bb"
-    ],
-    "Ballerina": [
-      ".bal"
     ],
     "Literate CoffeeScript": [
       ".litcoffee"
     ],
     "RenderScript": [
-      ".rs",
-      ".rsh"
+      ".rs"
     ],
     "RPC": [
       ".x"
-    ],
-    "SmPL": [
-      ".cocci"
     ],
     "Eiffel": [
       ".e"
     ],
     "BlitzMax": [
       ".bmx"
-    ],
-    "SubRip Text": [
-      ".srt"
     ],
     "COBOL": [
       ".cbl",
@@ -1555,12 +936,6 @@
     ],
     "Sass": [
       ".sass"
-    ],
-    "Type Language": [
-      ".tl"
-    ],
-    "Easybuild": [
-      ".eb"
     ],
     "Scaml": [
       ".scaml"
@@ -1596,9 +971,6 @@
     "Puppet": [
       ".pp"
     ],
-    "RDoc": [
-      ".rdoc"
-    ],
     "C": [
       ".C",
       ".H",
@@ -1608,9 +980,6 @@
     ],
     "fish": [
       ".fish"
-    ],
-    "Closure Templates": [
-      ".soy"
     ],
     "Visual Basic .NET": [
       ".vb",
@@ -1645,18 +1014,8 @@
     "V": [
       ".v"
     ],
-    "q": [
-      ".q"
-    ],
     "Objective-J": [
       ".j"
-    ],
-    "Grammatical Framework": [
-      ".gf"
-    ],
-    "MediaWiki": [
-      ".mediawiki",
-      ".wiki"
     ],
     "XC": [
       ".xc"
@@ -1666,12 +1025,7 @@
       ".m"
     ],
     "Linker Script": [
-      ".ld",
-      ".lds",
       ".x"
-    ],
-    "JSX": [
-      ".jsx"
     ],
     "Isabelle": [
       ".thy"
@@ -1701,14 +1055,8 @@
     "ActionScript": [
       ".as"
     ],
-    "E": [
-      ".E"
-    ],
     "Pan": [
       ".pan"
-    ],
-    "Wavefront Object": [
-      ".obj"
     ],
     "Reason": [
       ".re"
@@ -1716,18 +1064,8 @@
     "IGOR Pro": [
       ".ipf"
     ],
-    "GAMS": [
-      ".gms"
-    ],
     "Sage": [
       ".sagews"
-    ],
-    "AGS Script": [
-      ".asc",
-      ".ash"
-    ],
-    "Adobe Font Metrics": [
-      ".afm"
     ],
     "JSON with Comments": [
       ".sublime-build",
@@ -1744,21 +1082,12 @@
     "HXML": [
       ".hxml"
     ],
-    "PowerBuilder": [
-      ".pbt",
-      ".sra",
-      ".sru",
-      ".srw"
-    ],
     "Inform 7": [
       ".i7x",
       ".ni"
     ],
     "Filebench WML": [
       ".f"
-    ],
-    "STON": [
-      ".ston"
     ],
     "HAProxy": [
       ".cfg"
@@ -1785,13 +1114,6 @@
     ]
   },
   "filenames": {
-    "XCompose": [
-      "XCompose"
-    ],
-    "Quake": [
-      "m3makefile",
-      "m3overrides"
-    ],
     "Emacs Lisp": [
       ".abbrev_defs",
       ".gnus",
@@ -1802,25 +1124,9 @@
       "_emacs",
       "abbrev_defs"
     ],
-    "Git Attributes": [
-      ".gitattributes"
-    ],
     "TOML": [
       "Cargo.lock",
       "Gopkg.lock"
-    ],
-    "nanorc": [
-      ".nanorc",
-      "nanorc"
-    ],
-    "cURL Config": [
-      ".curlrc"
-    ],
-    "Nim": [
-      "nim.cfg"
-    ],
-    "GN": [
-      ".gn"
     ],
     "CMake": [
       "CMakeLists.txt"
@@ -1838,9 +1144,6 @@
     "Ant Build System": [
       "ant.xml",
       "build.xml"
-    ],
-    "NPM Config": [
-      ".npmrc"
     ],
     "Dockerfile": [
       "Dockerfile"
@@ -1889,16 +1192,9 @@
     "Markdown": [
       "contents.lr"
     ],
-    "Wget Config": [
-      ".wgetrc"
-    ],
-    "Readline Config": [
-      ".inputrc"
-    ],
     "Perl": [
       "Makefile.PL",
       "Rexfile",
-      "ack",
       "cpanfile"
     ],
     "Erlang": [
@@ -1907,67 +1203,15 @@
       "rebar.config.lock",
       "rebar.lock"
     ],
-    "Alpine Abuild": [
-      "APKBUILD"
-    ],
-    "R": [
-      "expr-dist"
-    ],
-    "X Font Directory Index": [
-      "encodings.dir",
-      "fonts.alias",
-      "fonts.dir",
-      "fonts.scale"
-    ],
     "Nextflow": [
       "nextflow.config"
     ],
-    "SSH Config": [
-      "ssh-config",
-      "ssh_config",
-      "sshconfig",
-      "sshconfig.snip",
-      "sshd-config",
-      "sshd_config"
-    ],
-    "KiCad Layout": [
-      "fp-lib-table"
-    ],
     "PHP": [
-      ".php",
       ".php_cs",
       ".php_cs.dist"
     ],
-    "M4Sugar": [
-      "configure.ac"
-    ],
-    "Ignore List": [
-      ".atomignore",
-      ".babelignore",
-      ".bzrignore",
-      ".coffeelintignore",
-      ".cvsignore",
-      ".dockerignore",
-      ".eslintignore",
-      ".gitignore",
-      ".nodemonignore",
-      ".npmignore",
-      ".prettierignore",
-      ".stylelintignore",
-      ".vscodeignore",
-      "gitignore-global",
-      "gitignore_global"
-    ],
-    "XML": [
-      ".cproject"
-    ],
     "Meson": [
-      "meson.build",
       "meson_options.txt"
-    ],
-    "Tcl": [
-      "owh",
-      "starfield"
     ],
     "INI": [
       "buildozer.spec"
@@ -1981,18 +1225,8 @@
       "composer.lock",
       "mcmod.info"
     ],
-    "EditorConfig": [
-      ".editorconfig"
-    ],
-    "Git Config": [
-      ".gitconfig",
-      ".gitmodules"
-    ],
     "Nginx": [
       "nginx.conf"
-    ],
-    "Cloud Firestore Security Rules": [
-      "firestore.rules"
     ],
     "Vim script": [
       ".gvimrc",
@@ -2007,22 +1241,15 @@
       "glide.lock"
     ],
     "Cabal Config": [
-      "cabal.config",
-      "cabal.project"
+      "cabal.config"
     ],
     "Groovy": [
       "Jenkinsfile"
-    ],
-    "Isabelle ROOT": [
-      "ROOT"
     ],
     "ApacheConf": [
       ".htaccess",
       "apache2.conf",
       "httpd.conf"
-    ],
-    "Linker Script": [
-      "ld.script"
     ],
     "Ruby": [
       ".irbrc",
@@ -2052,29 +1279,17 @@
       "pom.xml"
     ]
   },
-  "tokens_total": 96762,
-  "languages_total": 2176,
+  "tokens_total": 71288,
+  "languages_total": 1496,
   "tokens": {
-    "PLpgSQL": {
-      ";": 466
-    },
-    "OCaml": {
-      ";": 1262
-    },
     "Scheme": {
       ";": 2402
     },
     "Modelica": {
       ";": 615
     },
-    "XCompose": {
-      ";": 9
-    },
     "IDL": {
       ";": 59
-    },
-    "XPages": {
-      ";": 1
     },
     "Terra": {
       ";": 28
@@ -2085,17 +1300,8 @@
     "Pike": {
       ";": 150
     },
-    "Pod": {
-      ";": 16
-    },
     "Emacs Lisp": {
       ";": 685
-    },
-    "P4": {
-      ";": 131
-    },
-    "SRecode Template": {
-      ";": 18
     },
     "Pascal": {
       ";": 794
@@ -2124,32 +1330,14 @@
     "Golo": {
       ";": 26
     },
-    "Jison Lex": {
-      ";": 49
-    },
     "C++": {
       ";": 4669
     },
     "HyPhy": {
       ";": 3664
     },
-    "MAXScript": {
-      ";": 3
-    },
     "Pony": {
       ";": 2
-    },
-    "SuperCollider": {
-      ";": 293
-    },
-    "Zig": {
-      ";": 66
-    },
-    "Propeller Spin": {
-      ";": 5
-    },
-    "Roff Manpage": {
-      ";": 65
     },
     "Asymptote": {
       ";": 99
@@ -2157,20 +1345,8 @@
     "VCL": {
       ";": 56
     },
-    "Brightscript": {
-      ";": 11
-    },
     "Apex": {
       ";": 329
-    },
-    "Jison": {
-      ";": 99
-    },
-    "cURL Config": {
-      ";": 4
-    },
-    "Svelte": {
-      ";": 29
     },
     "HTML+ERB": {
       ";": 1
@@ -2178,47 +1354,20 @@
     "UnrealScript": {
       ";": 312
     },
-    "Riot": {
-      ";": 19
-    },
     "Go": {
       ";": 2
     },
     "ECLiPSe": {
       ";": 1
     },
-    "POV-Ray SDL": {
-      ";": 62
-    },
     "Racket": {
       ";": 3
-    },
-    "Nix": {
-      ";": 32
     },
     "Zephir": {
       ";": 120
     },
-    "X PixMap": {
-      ";": 59
-    },
-    "Fstar": {
-      ";": 44
-    },
-    "Nim": {
-      ";": 8
-    },
-    "Graphviz (DOT)": {
-      ";": 100
-    },
-    "Muse": {
-      ";": 22
-    },
     "Turtle": {
       ";": 65
-    },
-    "SystemVerilog": {
-      ";": 34
     },
     "CLIPS": {
       ";": 135
@@ -2226,23 +1375,11 @@
     "NCL": {
       ";": 865
     },
-    "Pep8": {
-      ";": 511
-    },
-    "YANG": {
-      ";": 18
-    },
-    "Windows Registry Entries": {
-      ";": 9
-    },
     "Lex": {
       ";": 90
     },
     "QML": {
       ";": 26
-    },
-    "GN": {
-      ";": 9
     },
     "CMake": {
       ";": 1
@@ -2253,20 +1390,11 @@
     "Alloy": {
       ";": 1
     },
-    "Apollo Guidance Computer": {
-      ";": 1
-    },
     "XQuery": {
       ";": 25
     },
     "Python": {
       ";": 36
-    },
-    "CSS": {
-      ";": 4219
-    },
-    "Metal": {
-      ";": 24
     },
     "FLUX": {
       ";": 143
@@ -2279,15 +1407,6 @@
     },
     "LFE": {
       ";": 328
-    },
-    "CartoCSS": {
-      ";": 1091
-    },
-    "Marko": {
-      ";": 14
-    },
-    "SMT": {
-      ";": 490
     },
     "sed": {
       ";": 1
@@ -2310,15 +1429,6 @@
     "Chapel": {
       ";": 662
     },
-    "HolyC": {
-      ";": 115
-    },
-    "OpenStep Property List": {
-      ";": 44
-    },
-    "NPM Config": {
-      ";": 4
-    },
     "Dockerfile": {
       ";": 3
     },
@@ -2327,9 +1437,6 @@
     },
     "Makefile": {
       ";": 116
-    },
-    "Org": {
-      ";": 1
     },
     "Shell": {
       ";": 78
@@ -2346,9 +1453,6 @@
     "Groovy Server Pages": {
       ";": 4
     },
-    "Modula-3": {
-      ";": 1180
-    },
     "Slice": {
       ";": 303
     },
@@ -2357,9 +1461,6 @@
     },
     "Cuda": {
       ";": 30
-    },
-    "Altium Designer": {
-      ";": 3
     },
     "NetLinx+ERB": {
       ";": 2
@@ -2370,20 +1471,11 @@
     "SCSS": {
       ";": 7
     },
-    "Rich Text Format": {
-      ";": 542
-    },
-    "EQ": {
-      ";": 256
-    },
     "TSX": {
       ";": 399
     },
     "Perl": {
-      ";": 1729
-    },
-    "TypeScript": {
-      ";": 29
+      ";": 1103
     },
     "Smalltalk": {
       ";": 22
@@ -2394,32 +1486,11 @@
     "Pawn": {
       ";": 470
     },
-    "Stylus": {
-      ";": 2
-    },
-    "Vue": {
-      ";": 1
-    },
     "Rust": {
       ";": 824
     },
-    "WebVTT": {
-      ";": 2
-    },
     "Gosu": {
       ";": 2
-    },
-    "Ox": {
-      ";": 92
-    },
-    "PureScript": {
-      ";": 9
-    },
-    "PostCSS": {
-      ";": 4
-    },
-    "dircolors": {
-      ";": 358
     },
     "Modula-2": {
       ";": 254
@@ -2430,23 +1501,11 @@
     "eC": {
       ";": 111
     },
-    "Alpine Abuild": {
-      ";": 4
-    },
-    "ZAP": {
-      ";": 3
-    },
-    "Edje Data Collection": {
-      ";": 1586
-    },
     "Moocode": {
       ";": 163
     },
     "ABNF": {
       ";": 96
-    },
-    "R": {
-      ";": 6
     },
     "NetLogo": {
       ";": 12
@@ -2461,13 +1520,10 @@
       ";": 21
     },
     "Eagle": {
-      ";": 5567
+      ";": 2964
     },
     "TSQL": {
       ";": 23
-    },
-    "Click": {
-      ";": 79
     },
     "Logos": {
       ";": 91
@@ -2476,34 +1532,19 @@
       ";": 158
     },
     "Hack": {
-      ";": 286
-    },
-    "Nextflow": {
-      ";": 9
+      ";": 212
     },
     "MQL5": {
       ";": 336
     },
-    "OpenSCAD": {
-      ";": 6
-    },
     "Java": {
       ";": 1569
-    },
-    "HTML+Razor": {
-      ";": 21
     },
     "Bluespec": {
       ";": 177
     },
-    "EJS": {
-      ";": 7
-    },
     "desktop": {
       ";": 3
-    },
-    "JSONiq": {
-      ";": 9
     },
     "Elm": {
       ";": 3
@@ -2515,49 +1556,25 @@
       ";": 17
     },
     "Component Pascal": {
-      ";": 124
+      ";": 63
     },
     "AspectJ": {
       ";": 29
     },
-    "SQF": {
-      ";": 32
-    },
     "EBNF": {
       ";": 67
     },
-    "DNS Zone": {
-      ";": 11
-    },
-    "GAML": {
-      ";": 458
-    },
-    "WebIDL": {
-      ";": 26
-    },
     "SQLPL": {
-      ";": 62
-    },
-    "Regular Expression": {
-      ";": 4
+      ";": 39
     },
     "Haskell": {
       ";": 1
     },
     "PHP": {
-      ";": 1551
-    },
-    "M4Sugar": {
-      ";": 13
+      ";": 1550
     },
     "DTrace": {
       ";": 111
-    },
-    "Pod 6": {
-      ";": 45
-    },
-    "NetLinx": {
-      ";": 57
     },
     "MQL4": {
       ";": 15
@@ -2568,26 +1585,14 @@
     "Lua": {
       ";": 1
     },
-    "Zimpl": {
-      ";": 7
-    },
     "Ragel": {
       ";": 38
     },
     "XML": {
-      ";": 435
-    },
-    "Latte": {
-      ";": 16
-    },
-    "RUNOFF": {
-      ";": 253
+      ";": 392
     },
     "Max": {
       ";": 39
-    },
-    "Module Management System": {
-      ";": 151
     },
     "GLSL": {
       ";": 859
@@ -2595,35 +1600,17 @@
     "Stan": {
       ";": 37
     },
-    "Red": {
-      ";": 37
-    },
-    "ZIL": {
-      ";": 15
-    },
     "PowerShell": {
       ";": 2
     },
     "EML": {
       ";": 7
     },
-    "HiveQL": {
-      ";": 18
-    },
     "OpenCL": {
       ";": 12
     },
     "Jasmin": {
       ";": 64
-    },
-    "UrWeb": {
-      ";": 31
-    },
-    "Motorola 68K Assembly": {
-      ";": 25
-    },
-    "XML Property List": {
-      ";": 3
     },
     "Clean": {
       ";": 1
@@ -2634,23 +1621,14 @@
     "Slash": {
       ";": 32
     },
-    "Tcl": {
-      ";": 7
-    },
-    "Pic": {
-      ";": 12
-    },
     "Mask": {
       ";": 3
     },
     "AMPL": {
-      ";": 32
+      ";": 22
     },
     "INI": {
       ";": 9
-    },
-    "FIGlet Font": {
-      ";": 2
     },
     "JSON": {
       ";": 4
@@ -2658,50 +1636,20 @@
     "Brainfuck": {
       ";": 4
     },
-    "YASnippet": {
-      ";": 10
-    },
     "GAP": {
       ";": 571
-    },
-    "EditorConfig": {
-      ";": 1
-    },
-    "REXX": {
-      ";": 20
-    },
-    "PureBasic": {
-      ";": 31
     },
     "xBase": {
       ";": 74
     },
-    "Jolie": {
-      ";": 32
-    },
-    "WebAssembly": {
-      ";": 50
-    },
     "Verilog": {
       ";": 342
-    },
-    "Git Config": {
-      ";": 30
-    },
-    "mIRC Script": {
-      ";": 316
     },
     "Cool": {
       ";": 41
     },
-    "Cycript": {
-      ";": 201
-    },
     "Nginx": {
       ";": 121
-    },
-    "Nearley": {
-      ";": 41
     },
     "Scala": {
       ";": 11
@@ -2716,16 +1664,13 @@
       ";": 11
     },
     "Roff": {
-      ";": 221
+      ";": 7
     },
     "SAS": {
       ";": 209
     },
     "Turing": {
       ";": 1
-    },
-    "Jsonnet": {
-      ";": 2
     },
     "Oxygene": {
       ";": 2
@@ -2739,26 +1684,11 @@
     "DM": {
       ";": 3
     },
-    "X10": {
-      ";": 585
-    },
     "Nemerle": {
       ";": 2
     },
-    "Cloud Firestore Security Rules": {
-      ";": 22
-    },
     "NL": {
       ";": 4
-    },
-    "PigLatin": {
-      ";": 4
-    },
-    "JFlex": {
-      ";": 190
-    },
-    "Uno": {
-      ";": 148
     },
     "Vim script": {
       ";": 1
@@ -2773,7 +1703,7 @@
       ";": 41
     },
     "MUF": {
-      ";": 41
+      ";": 24
     },
     "YAML": {
       ";": 2
@@ -2782,16 +1712,10 @@
       ";": 167
     },
     "G-code": {
-      ";": 30
-    },
-    "ZenScript": {
-      ";": 36
+      ";": 8
     },
     "Proguard": {
       ";": 7
-    },
-    "Pickle": {
-      ";": 105
     },
     "Nit": {
       ";": 210
@@ -2799,14 +1723,8 @@
     "Limbo": {
       ";": 41
     },
-    "Clarion": {
-      ";": 5
-    },
     "KRL": {
       ";": 1
-    },
-    "Rascal": {
-      ";": 156
     },
     "Julia": {
       ";": 1
@@ -2818,34 +1736,22 @@
       ";": 18
     },
     "PLSQL": {
-      ";": 125
+      ";": 45
     },
     "OpenEdge ABL": {
       ";": 6
     },
     "SourcePawn": {
-      ";": 581
+      ";": 125
     },
     "ObjectScript": {
       ";": 12
-    },
-    "Web Ontology Language": {
-      ";": 4
     },
     "CoffeeScript": {
       ";": 1
     },
     "Protocol Buffer": {
       ";": 13
-    },
-    "Ring": {
-      ";": 1
-    },
-    "X BitMap": {
-      ";": 1
-    },
-    "DIGITAL Command Language": {
-      ";": 21
     },
     "ColdFusion CFC": {
       ";": 56
@@ -2854,16 +1760,10 @@
       ";": 356
     },
     "NewLisp": {
-      ";": 126
-    },
-    "ATS": {
-      ";": 22
+      ";": 48
     },
     "JavaScript": {
       ";": 4476
-    },
-    "Papyrus": {
-      ";": 13
     },
     "Csound": {
       ";": 9
@@ -2880,20 +1780,11 @@
     "BitBake": {
       ";": 10
     },
-    "Ballerina": {
-      ";": 47
-    },
     "RenderScript": {
-      ";": 200
+      ";": 38
     },
     "RPC": {
       ";": 220
-    },
-    "SmPL": {
-      ";": 31
-    },
-    "Type Language": {
-      ";": 858
     },
     "M": {
       ";": 2390
@@ -2940,17 +1831,8 @@
     "V": {
       ";": 34
     },
-    "q": {
-      ";": 195
-    },
     "Objective-J": {
       ";": 198
-    },
-    "Grammatical Framework": {
-      ";": 1409
-    },
-    "MediaWiki": {
-      ";": 19
     },
     "XC": {
       ";": 5
@@ -2959,10 +1841,7 @@
       ";": 2952
     },
     "Linker Script": {
-      ";": 76
-    },
-    "JSX": {
-      ";": 5
+      ";": 1
     },
     "Csound Document": {
       ";": 9
@@ -2979,9 +1858,6 @@
     "ActionScript": {
       ";": 9
     },
-    "E": {
-      ";": 1
-    },
     "Pan": {
       ";": 294
     },
@@ -2991,29 +1867,14 @@
     "IGOR Pro": {
       ";": 8
     },
-    "GAMS": {
-      ";": 15
-    },
     "Sage": {
       ";": 1
-    },
-    "AGS Script": {
-      ";": 243
-    },
-    "Adobe Font Metrics": {
-      ";": 1084
     },
     "JSON with Comments": {
       ";": 5
     },
-    "PowerBuilder": {
-      ";": 86
-    },
     "Inform 7": {
       ";": 8
-    },
-    "STON": {
-      ";": 1
     },
     "Stata": {
       ";": 19
@@ -3023,20 +1884,13 @@
     }
   },
   "language_tokens": {
-    "PLpgSQL": 466,
-    "OCaml": 1262,
     "Scheme": 2402,
     "Modelica": 615,
-    "XCompose": 9,
     "IDL": 59,
-    "XPages": 1,
     "Terra": 28,
     "Inno Setup": 74,
     "Pike": 150,
-    "Pod": 16,
     "Emacs Lisp": 685,
-    "P4": 131,
-    "SRecode Template": 18,
     "Pascal": 794,
     "NSIS": 49,
     "Ceylon": 4,
@@ -3046,61 +1900,32 @@
     "ShaderLab": 145,
     "TOML": 1,
     "Golo": 26,
-    "Jison Lex": 49,
     "C++": 4669,
     "HyPhy": 3664,
-    "MAXScript": 3,
     "Pony": 2,
-    "SuperCollider": 293,
-    "Zig": 66,
-    "Propeller Spin": 5,
-    "Roff Manpage": 65,
     "Asymptote": 99,
     "VCL": 56,
-    "Brightscript": 11,
     "Apex": 329,
-    "Jison": 99,
-    "cURL Config": 4,
-    "Svelte": 29,
     "HTML+ERB": 1,
     "UnrealScript": 312,
-    "Riot": 19,
     "Go": 2,
     "ECLiPSe": 1,
-    "POV-Ray SDL": 62,
     "Racket": 3,
-    "Nix": 32,
     "Zephir": 120,
-    "X PixMap": 59,
-    "Fstar": 44,
-    "Nim": 8,
-    "Graphviz (DOT)": 100,
-    "Muse": 22,
     "Turtle": 65,
-    "SystemVerilog": 34,
     "CLIPS": 135,
     "NCL": 865,
-    "Pep8": 511,
-    "YANG": 18,
-    "Windows Registry Entries": 9,
     "Lex": 90,
     "QML": 26,
-    "GN": 9,
     "CMake": 1,
     "AngelScript": 166,
     "Alloy": 1,
-    "Apollo Guidance Computer": 1,
     "XQuery": 25,
     "Python": 36,
-    "CSS": 4219,
-    "Metal": 24,
     "FLUX": 143,
     "Clojure": 359,
     "Less": 7,
     "LFE": 328,
-    "CartoCSS": 1091,
-    "Marko": 14,
-    "SMT": 490,
     "sed": 1,
     "Fantom": 2,
     "Processing": 15,
@@ -3108,201 +1933,125 @@
     "Awk": 59,
     "GCC Machine Description": 2556,
     "Chapel": 662,
-    "HolyC": 115,
-    "OpenStep Property List": 44,
-    "NPM Config": 4,
     "Dockerfile": 3,
     "Dart": 9,
     "Makefile": 116,
-    "Org": 1,
     "Shell": 78,
     "Objective-C++": 743,
     "DirectX 3D File": 176,
     "Markdown": 58,
     "Groovy Server Pages": 4,
-    "Modula-3": 1180,
     "Slice": 303,
     "Assembly": 2292,
     "Cuda": 30,
-    "Altium Designer": 3,
     "NetLinx+ERB": 2,
     "LoomScript": 78,
     "SCSS": 7,
-    "Rich Text Format": 542,
-    "EQ": 256,
     "TSX": 399,
-    "Perl": 1729,
-    "TypeScript": 29,
+    "Perl": 1103,
     "Smalltalk": 22,
     "C#": 101,
     "Pawn": 470,
-    "Stylus": 2,
-    "Vue": 1,
     "Rust": 824,
-    "WebVTT": 2,
     "Gosu": 2,
-    "Ox": 92,
-    "PureScript": 9,
-    "PostCSS": 4,
-    "dircolors": 358,
     "Modula-2": 254,
     "Erlang": 156,
     "eC": 111,
-    "Alpine Abuild": 4,
-    "ZAP": 3,
-    "Edje Data Collection": 1586,
     "Moocode": 163,
     "ABNF": 96,
-    "R": 6,
     "NetLogo": 12,
     "RPM Spec": 13,
     "LSL": 58,
     "Liquid": 21,
-    "Eagle": 5567,
+    "Eagle": 2964,
     "TSQL": 23,
-    "Click": 79,
     "Logos": 91,
     "Mathematica": 158,
-    "Hack": 286,
-    "Nextflow": 9,
+    "Hack": 212,
     "MQL5": 336,
-    "OpenSCAD": 6,
     "Java": 1569,
-    "HTML+Razor": 21,
     "Bluespec": 177,
-    "EJS": 7,
     "desktop": 3,
-    "JSONiq": 9,
     "Elm": 3,
     "HTML": 46,
     "Crystal": 17,
-    "Component Pascal": 124,
+    "Component Pascal": 63,
     "AspectJ": 29,
-    "SQF": 32,
     "EBNF": 67,
-    "DNS Zone": 11,
-    "GAML": 458,
-    "WebIDL": 26,
-    "SQLPL": 62,
-    "Regular Expression": 4,
+    "SQLPL": 39,
     "Haskell": 1,
-    "PHP": 1551,
-    "M4Sugar": 13,
+    "PHP": 1550,
     "DTrace": 111,
-    "Pod 6": 45,
-    "NetLinx": 57,
     "MQL4": 15,
     "XS": 110,
     "Lua": 1,
-    "Zimpl": 7,
     "Ragel": 38,
-    "XML": 435,
-    "Latte": 16,
-    "RUNOFF": 253,
+    "XML": 392,
     "Max": 39,
-    "Module Management System": 151,
     "GLSL": 859,
     "Stan": 37,
-    "Red": 37,
-    "ZIL": 15,
     "PowerShell": 2,
     "EML": 7,
-    "HiveQL": 18,
     "OpenCL": 12,
     "Jasmin": 64,
-    "UrWeb": 31,
-    "Motorola 68K Assembly": 25,
-    "XML Property List": 3,
     "Clean": 1,
     "VHDL": 7,
     "Slash": 32,
-    "Tcl": 7,
-    "Pic": 12,
     "Mask": 3,
-    "AMPL": 32,
+    "AMPL": 22,
     "INI": 9,
-    "FIGlet Font": 2,
     "JSON": 4,
     "Brainfuck": 4,
-    "YASnippet": 10,
     "GAP": 571,
-    "EditorConfig": 1,
-    "REXX": 20,
-    "PureBasic": 31,
     "xBase": 74,
-    "Jolie": 32,
-    "WebAssembly": 50,
     "Verilog": 342,
-    "Git Config": 30,
-    "mIRC Script": 316,
     "Cool": 41,
-    "Cycript": 201,
     "Nginx": 121,
-    "Nearley": 41,
     "Scala": 11,
     "Swift": 2,
     "MATLAB": 1055,
     "Filterscript": 11,
-    "Roff": 221,
+    "Roff": 7,
     "SAS": 209,
     "Turing": 1,
-    "Jsonnet": 2,
     "Oxygene": 2,
     "Zeek": 304,
     "Perl 6": 1593,
     "DM": 3,
-    "X10": 585,
     "Nemerle": 2,
-    "Cloud Firestore Security Rules": 22,
     "NL": 4,
-    "PigLatin": 4,
-    "JFlex": 190,
-    "Uno": 148,
     "Vim script": 1,
     "BlitzBasic": 59,
     "Volt": 53,
     "Rebol": 41,
-    "MUF": 41,
+    "MUF": 24,
     "YAML": 2,
     "CWeb": 167,
-    "G-code": 30,
-    "ZenScript": 36,
+    "G-code": 8,
     "Proguard": 7,
-    "Pickle": 105,
     "Nit": 210,
     "Limbo": 41,
-    "Clarion": 5,
     "KRL": 1,
-    "Rascal": 156,
     "Julia": 1,
     "Lasso": 1475,
     "Shen": 18,
-    "PLSQL": 125,
+    "PLSQL": 45,
     "OpenEdge ABL": 6,
-    "SourcePawn": 581,
+    "SourcePawn": 125,
     "ObjectScript": 12,
-    "Web Ontology Language": 4,
     "CoffeeScript": 1,
     "Protocol Buffer": 13,
-    "Ring": 1,
-    "X BitMap": 1,
-    "DIGITAL Command Language": 21,
     "ColdFusion CFC": 56,
     "wisp": 356,
-    "NewLisp": 126,
-    "ATS": 22,
+    "NewLisp": 48,
     "JavaScript": 4476,
-    "Papyrus": 13,
     "Csound": 9,
     "Yacc": 35,
     "F#": 27,
     "ApacheConf": 2,
     "BitBake": 10,
-    "Ballerina": 47,
-    "RenderScript": 200,
+    "RenderScript": 38,
     "RPC": 220,
-    "SmPL": 31,
-    "Type Language": 858,
     "M": 2390,
     "HLSL": 208,
     "Forth": 548,
@@ -3318,58 +2067,37 @@
     "JavaScript+ERB": 1,
     "Squirrel": 15,
     "V": 34,
-    "q": 195,
     "Objective-J": 198,
-    "Grammatical Framework": 1409,
-    "MediaWiki": 19,
     "XC": 5,
     "Objective-C": 2952,
-    "Linker Script": 76,
-    "JSX": 5,
+    "Linker Script": 1,
     "Csound Document": 9,
     "Standard ML": 27,
     "ECL": 23,
     "Ruby": 72,
     "ActionScript": 9,
-    "E": 1,
     "Pan": 294,
     "Reason": 954,
     "IGOR Pro": 8,
-    "GAMS": 15,
     "Sage": 1,
-    "AGS Script": 243,
-    "Adobe Font Metrics": 1084,
     "JSON with Comments": 5,
-    "PowerBuilder": 86,
     "Inform 7": 8,
-    "STON": 1,
     "Stata": 19,
     "SQL": 82
   },
   "languages": {
-    "PLpgSQL": 7,
-    "OCaml": 10,
     "Scheme": 4,
     "Modelica": 12,
-    "XCompose": 1,
     "IDL": 4,
-    "XPages": 2,
     "Terra": 3,
-    "RMarkdown": 1,
     "Inno Setup": 1,
     "Pike": 3,
-    "Pod": 4,
     "edn": 1,
-    "Quake": 2,
     "HTML+Django": 2,
     "Emacs Lisp": 11,
-    "P4": 2,
-    "mcfunction": 1,
-    "SRecode Template": 1,
     "Pascal": 10,
     "NSIS": 2,
     "AppleScript": 7,
-    "Git Attributes": 1,
     "Ceylon": 1,
     "Csound Score": 3,
     "Haml": 2,
@@ -3379,89 +2107,43 @@
     "ShaderLab": 3,
     "TOML": 2,
     "Golo": 27,
-    "Jison Lex": 2,
     "Formatted": 3,
     "C++": 50,
-    "Grace": 2,
     "HyPhy": 8,
-    "MAXScript": 5,
     "Pony": 6,
     "Lean": 2,
-    "Opal": 1,
-    "Unix Assembly": 2,
-    "Glyph Bitmap Distribution Format": 1,
-    "SuperCollider": 5,
     "MoonScript": 1,
-    "Zig": 3,
-    "Propeller Spin": 10,
-    "Roff Manpage": 21,
-    "Unity3D Asset": 6,
-    "nanorc": 3,
     "Asymptote": 2,
     "VCL": 2,
     "TeX": 7,
-    "GDB": 2,
-    "Brightscript": 1,
     "Apex": 6,
-    "Jison": 3,
-    "cURL Config": 1,
-    "Svelte": 1,
     "HTML+ERB": 2,
     "RobotFramework": 3,
     "UnrealScript": 2,
-    "Riot": 2,
     "Go": 3,
-    "Vim Snippet": 2,
     "ECLiPSe": 1,
-    "POV-Ray SDL": 12,
     "Racket": 2,
-    "LOLCODE": 1,
-    "Nix": 1,
-    "API Blueprint": 3,
     "Zephir": 2,
-    "X PixMap": 2,
-    "Fstar": 2,
-    "Nim": 5,
-    "Graphviz (DOT)": 2,
-    "Gerber Image": 17,
-    "CoNLL-U": 3,
-    "Muse": 2,
     "Turtle": 2,
-    "SystemVerilog": 4,
     "SPARQL": 2,
     "CLIPS": 2,
-    "SugarSS": 1,
-    "CSON": 4,
     "Omgrofl": 1,
     "Gnuplot": 7,
     "NCL": 16,
-    "Pep8": 7,
-    "YANG": 1,
-    "Windows Registry Entries": 1,
     "Lex": 1,
     "QML": 1,
-    "GN": 11,
     "CMake": 7,
-    "Public Key": 7,
     "AngelScript": 2,
     "Alloy": 3,
-    "Apollo Guidance Computer": 1,
     "GDScript": 4,
     "XQuery": 1,
-    "KiCad Schematic": 6,
     "Python": 22,
-    "CSS": 2,
-    "Metal": 1,
     "FLUX": 4,
     "Clojure": 9,
     "Less": 1,
     "LFE": 4,
-    "ASN.1": 1,
     "PicoLisp": 1,
-    "CartoCSS": 1,
     "Elixir": 1,
-    "Marko": 3,
-    "SMT": 4,
     "World of Warcraft Addon Data": 3,
     "sed": 1,
     "Fantom": 2,
@@ -3471,291 +2153,177 @@
     "GCC Machine Description": 1,
     "Ant Build System": 2,
     "Chapel": 5,
-    "HolyC": 5,
-    "OpenStep Property List": 1,
-    "NPM Config": 1,
     "Dockerfile": 1,
     "Dart": 1,
     "Makefile": 11,
-    "Org": 1,
     "Shell": 38,
     "Objective-C++": 2,
     "DirectX 3D File": 1,
     "Markdown": 10,
     "Groovy Server Pages": 4,
-    "Modula-3": 5,
-    "MTML": 1,
     "Slice": 3,
     "Assembly": 6,
-    "Wget Config": 1,
     "Cuda": 2,
-    "Altium Designer": 4,
     "NetLinx+ERB": 2,
     "LoomScript": 2,
     "SCSS": 1,
-    "Rich Text Format": 2,
-    "EQ": 3,
-    "Readline Config": 1,
     "TSX": 4,
-    "Perl": 22,
-    "TypeScript": 3,
-    "LookML": 3,
+    "Perl": 21,
     "Smalltalk": 10,
     "C#": 5,
     "Pawn": 6,
-    "Stylus": 1,
-    "Vue": 2,
-    "ShellSession": 3,
     "Rust": 3,
-    "FreeMarker": 2,
-    "WebVTT": 2,
     "Gosu": 5,
-    "Ox": 3,
-    "Dogescript": 1,
-    "Dhall": 2,
     "Pug": 2,
-    "PureScript": 4,
-    "PostCSS": 1,
-    "dircolors": 1,
     "Modula-2": 1,
-    "Prisma": 5,
     "Erlang": 12,
     "eC": 1,
-    "Alpine Abuild": 1,
-    "VBA": 4,
-    "ZAP": 1,
-    "Edje Data Collection": 1,
+    "VBA": 3,
     "Moocode": 3,
     "ABNF": 1,
-    "R": 7,
+    "R": 6,
     "Logtalk": 1,
     "NetLogo": 1,
     "RPM Spec": 3,
-    "YARA": 3,
     "LSL": 2,
-    "Kit": 1,
     "Liquid": 2,
-    "Eagle": 2,
+    "Eagle": 1,
     "XProc": 1,
     "TSQL": 4,
-    "Click": 2,
     "Logos": 5,
-    "X Font Directory Index": 4,
-    "Common Workflow Language": 1,
     "Mathematica": 12,
-    "Hack": 30,
-    "Nextflow": 4,
+    "Hack": 28,
+    "Nextflow": 1,
     "MQL5": 3,
-    "OpenSCAD": 2,
     "Java": 9,
-    "HTML+Razor": 2,
-    "SSH Config": 6,
     "Bluespec": 2,
-    "EJS": 2,
     "desktop": 1,
     "Diff": 1,
-    "JSONiq": 2,
     "Elm": 3,
     "HTML": 7,
     "ABAP": 1,
     "Kotlin": 1,
     "Crystal": 3,
-    "Component Pascal": 2,
+    "Component Pascal": 1,
     "AspectJ": 2,
-    "SQF": 2,
     "EBNF": 4,
-    "DataWeave": 5,
-    "DNS Zone": 2,
-    "GAML": 6,
-    "WebIDL": 2,
     "Xtend": 2,
-    "SQLPL": 6,
+    "SQLPL": 4,
     "Ren'Py": 1,
-    "Regular Expression": 4,
-    "KiCad Layout": 16,
     "Haskell": 5,
-    "PHP": 15,
-    "M4Sugar": 3,
+    "PHP": 14,
     "DTrace": 3,
     "Parrot Assembly": 1,
     "Frege": 4,
-    "Pod 6": 1,
-    "NetLinx": 2,
     "MQL4": 3,
-    "Xojo": 6,
     "XS": 1,
     "Lua": 5,
-    "Zimpl": 1,
-    "Ignore List": 16,
     "Ragel": 3,
-    "XML": 64,
-    "Latte": 2,
-    "RUNOFF": 4,
-    "MLIR": 4,
-    "HTML+EEX": 1,
+    "XML": 60,
     "Max": 3,
     "Thrift": 1,
-    "Blade": 2,
+    "Blade": 1,
     "Gradle": 2,
-    "Module Management System": 5,
     "Parrot Internal Representation": 1,
     "GLSL": 14,
     "Stan": 3,
-    "Wavefront Material": 4,
-    "Red": 2,
-    "ZIL": 1,
     "PowerShell": 4,
     "EML": 1,
     "Tea": 1,
-    "HiveQL": 2,
     "OpenCL": 2,
-    "Meson": 2,
+    "Meson": 1,
     "Jasmin": 8,
-    "UrWeb": 2,
-    "Motorola 68K Assembly": 1,
-    "XML Property List": 7,
     "Clean": 9,
     "VHDL": 1,
     "Linux Kernel Module": 3,
     "Slash": 1,
-    "Tcl": 4,
-    "Pic": 3,
-    "Jupyter Notebook": 1,
+    "Tcl": 2,
     "Mask": 1,
-    "AMPL": 2,
+    "AMPL": 1,
     "INI": 7,
-    "FIGlet Font": 1,
     "LTspice Symbol": 1,
     "JSON": 24,
     "Brainfuck": 5,
     "BibTeX": 1,
-    "YASnippet": 2,
     "GAP": 9,
-    "EditorConfig": 1,
-    "REXX": 4,
-    "PureBasic": 2,
-    "TLA": 2,
     "xBase": 3,
-    "Jolie": 5,
     "AutoHotkey": 1,
-    "HTML+ECR": 1,
     "SaltStack": 6,
-    "WebAssembly": 6,
     "Graph Modeling Language": 3,
     "Verilog": 13,
-    "Git Config": 3,
-    "mIRC Script": 4,
     "Cool": 2,
-    "AsciiDoc": 3,
-    "Cycript": 1,
     "Handlebars": 2,
     "Nginx": 2,
     "Cirru": 9,
-    "Nearley": 1,
-    "Scala": 5,
-    "HCL": 5,
+    "Scala": 4,
+    "HCL": 1,
     "Swift": 43,
-    "GraphQL": 4,
     "Genie": 2,
-    "CSV": 1,
     "MATLAB": 39,
     "Filterscript": 2,
-    "Roff": 27,
+    "Roff": 2,
     "SAS": 3,
     "PostScript": 2,
     "Turing": 2,
-    "Jsonnet": 1,
     "Oxygene": 1,
     "Zeek": 3,
     "Ioke": 1,
     "Perl 6": 22,
     "DM": 1,
-    "X10": 18,
     "Nemerle": 1,
     "PogoScript": 1,
-    "JSON5": 2,
     "LiveScript": 1,
     "Opa": 2,
-    "Cloud Firestore Security Rules": 1,
     "NL": 2,
-    "KiCad Legacy Layout": 1,
-    "EmberScript": 1,
-    "PigLatin": 1,
-    "JFlex": 2,
-    "Uno": 3,
     "Vim script": 7,
     "BlitzBasic": 3,
     "TXL": 1,
     "Agda": 1,
     "Volt": 1,
     "Rebol": 6,
-    "M4": 1,
     "Literate Agda": 1,
-    "MUF": 2,
+    "MUF": 1,
     "YAML": 11,
-    "Cabal Config": 4,
+    "Cabal Config": 1,
     "CWeb": 1,
     "Fortran": 5,
-    "G-code": 3,
+    "G-code": 2,
     "Monkey": 5,
-    "ZenScript": 1,
-    "wdl": 3,
     "Proguard": 3,
-    "Pickle": 4,
     "Nit": 24,
     "Limbo": 3,
-    "Clarion": 4,
     "KRL": 1,
-    "Rascal": 4,
     "Julia": 1,
     "Lasso": 3,
     "Shen": 3,
-    "PLSQL": 8,
-    "Open Policy Agent": 4,
-    "Oz": 1,
+    "PLSQL": 4,
     "OpenEdge ABL": 6,
-    "SourcePawn": 2,
+    "SourcePawn": 1,
     "ObjectScript": 1,
-    "Web Ontology Language": 1,
     "Groovy": 5,
     "CoffeeScript": 10,
     "Idris": 1,
     "Protocol Buffer": 1,
-    "Creole": 1,
-    "Ring": 4,
     "TI Program": 4,
-    "X BitMap": 1,
-    "Isabelle ROOT": 1,
-    "DIGITAL Command Language": 4,
     "ColdFusion CFC": 2,
     "wisp": 1,
-    "RAML": 1,
-    "NewLisp": 3,
+    "NewLisp": 2,
     "Slim": 1,
     "XSLT": 1,
-    "ATS": 9,
     "JavaScript": 36,
-    "Papyrus": 3,
     "Csound": 3,
     "Yacc": 1,
-    "Texinfo": 1,
     "F#": 8,
     "ColdFusion": 1,
     "ApacheConf": 4,
-    "Wollok": 2,
     "BitBake": 2,
-    "Ballerina": 5,
     "Literate CoffeeScript": 1,
-    "RenderScript": 2,
+    "RenderScript": 1,
     "RPC": 3,
-    "SmPL": 1,
     "Eiffel": 3,
     "BlitzMax": 1,
-    "SubRip Text": 1,
     "COBOL": 4,
     "Sass": 1,
-    "Type Language": 2,
-    "Easybuild": 1,
     "Scaml": 1,
     "M": 29,
     "VBScript": 1,
@@ -3764,10 +2332,8 @@
     "Forth": 16,
     "Coq": 13,
     "Puppet": 5,
-    "RDoc": 1,
     "C": 56,
     "fish": 3,
-    "Closure Templates": 1,
     "Visual Basic .NET": 3,
     "JSONLD": 1,
     "Scilab": 3,
@@ -3778,39 +2344,28 @@
     "JavaScript+ERB": 1,
     "Squirrel": 1,
     "V": 9,
-    "q": 2,
     "Objective-J": 3,
-    "Grammatical Framework": 41,
-    "MediaWiki": 2,
     "XC": 1,
     "Objective-C": 22,
-    "Linker Script": 4,
-    "JSX": 1,
+    "Linker Script": 1,
     "Isabelle": 1,
     "Csound Document": 3,
     "Standard ML": 5,
     "ECL": 1,
     "Ruby": 28,
     "ActionScript": 2,
-    "E": 7,
     "Pan": 18,
-    "Wavefront Object": 5,
     "Reason": 5,
     "IGOR Pro": 3,
-    "GAMS": 1,
     "Sage": 1,
-    "AGS Script": 4,
-    "Adobe Font Metrics": 3,
     "JSON with Comments": 20,
     "HXML": 2,
-    "PowerBuilder": 6,
     "Inform 7": 2,
     "Filebench WML": 1,
-    "STON": 7,
     "HAProxy": 4,
     "Maven POM": 1,
     "Stata": 7,
     "SQL": 12
   },
-  "md5": "7c4590627f8c8fcfde6c94e785a176ff"
+  "md5": "ac63be00057cf8b614c0a22d09b6cbd9"
 }

@@ -121,12 +121,6 @@ Arc:
   ace_mode: text
   primary_extension: .arc
 
-Arduino:
-  type: programming
-  color: "#bd79d1"
-  lexer: C++
-  primary_extension: .ino
-
 AspectJ:
   type: programming
   color: "#a957b0"
@@ -1456,18 +1450,6 @@ MiniD:
   searchable: false
   primary_extension: .minid
   ace_mode: text
-
-Mirah:
-  type: programming
-  lexer: Ruby
-  search_term: ruby
-  color: "#c7a938"
-  ace_mode: ruby
-  primary_extension: .druby
-  extensions:
-  - .duby
-  - .mir
-  - .mirah
 
 Modelica:
   type: programming
