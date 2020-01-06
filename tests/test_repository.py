@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 from pygments.lexers import find_lexer_class
-from framework import LinguistTestBase, main, ROOT_DIR
-from libs.repository import Repository
-from libs.language import Language
+from .framework import LinguistTestBase, main, ROOT_DIR
+from linguist.libs.repository import Repository
+from linguist.libs.language import Language
 
 class TestRepository(LinguistTestBase):
 
@@ -21,9 +21,6 @@ class TestRepository(LinguistTestBase):
 
     def test_linguist_size(self):
         assert self.linguist_repo().size > 3000
-
-    def test_binary_override(self):
-        assert self.repo(ROOT_DIR + '/samples/Nimrod').language == Language.find_by_name('Nimrod')
 
 
 if __name__ == '__main__':

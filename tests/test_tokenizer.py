@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 from os.path import join
-from framework import LinguistTestBase, main, ROOT_DIR
-from libs.tokenizer import Tokenizer
+from .framework import LinguistTestBase, main, ROOT_DIR
+from linguist.libs.tokenizer import Tokenizer
 
 
 class TestTokenizer(LinguistTestBase):

@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
 from pygments.lexers import find_lexer_class
-from framework import LinguistTestBase, main
-from libs.language import Language
+from .framework import LinguistTestBase, main
+from linguist.libs.language import Language
 
 
-colorize = """<div class="highlight"><pre><span class="k">def</span> <span class="nf">foo</span>
+colorize = """<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">foo</span>
   <span class="s1">&#39;foo&#39;</span>
 <span class="k">end</span>
 </pre></div>
@@ -24,9 +24,8 @@ class TestLanguage(LinguistTestBase):
         assert find_lexer_class('C++') == Language['C++'].lexer
         assert find_lexer_class('Coldfusion HTML') == Language['ColdFusion'].lexer
         assert find_lexer_class('Coq') == Language['Coq'].lexer
-        assert find_lexer_class('FSharp') == Language['F#'].lexer
-        assert find_lexer_class('FSharp') == Language['F#'].lexer
-        assert find_lexer_class('Fortran') == Language['FORTRAN'].lexer
+        assert find_lexer_class('F#') == Language['F#'].lexer
+        assert find_lexer_class('Fortran') == Language['Fortran'].lexer
         assert find_lexer_class('Gherkin') == Language['Cucumber'].lexer
         assert find_lexer_class('Groovy') == Language['Groovy'].lexer
         assert find_lexer_class('HTML') == Language['HTML'].lexer
@@ -34,7 +33,6 @@ class TestLanguage(LinguistTestBase):
         assert find_lexer_class('HTML+PHP') == Language['HTML+PHP'].lexer
         assert find_lexer_class('HTTP') == Language['HTTP'].lexer
         assert find_lexer_class('JSON') == Language['JSON'].lexer
-        assert find_lexer_class('Java') == Language['ChucK'].lexer
         assert find_lexer_class('Java') == Language['Java'].lexer
         assert find_lexer_class('JavaScript') == Language['JavaScript'].lexer
         assert find_lexer_class('MOOCode') == Language['Moocode'].lexer
@@ -46,7 +44,6 @@ class TestLanguage(LinguistTestBase):
         assert find_lexer_class('REBOL') == Language['Rebol'].lexer
         assert find_lexer_class('RHTML') == Language['HTML+ERB'].lexer
         assert find_lexer_class('RHTML') == Language['RHTML'].lexer
-        assert find_lexer_class('Ruby') == Language['Mirah'].lexer
         assert find_lexer_class('Ruby') == Language['Ruby'].lexer
         assert find_lexer_class('S') == Language['R'].lexer
         assert find_lexer_class('Scheme') == Language['Emacs Lisp'].lexer
@@ -127,7 +124,6 @@ class TestLanguage(LinguistTestBase):
         assert Language['Ruby'] == Language['Ruby'].group
 
         # Test a few special groups
-        assert Language['Assembly'] == Language['GAS'].group
         assert Language['C'] == Language['OpenCL'].group
         assert Language['Haskell'] == Language['Literate Haskell'].group
         assert Language['Java'] == Language['Java Server Pages'].group
@@ -137,10 +133,6 @@ class TestLanguage(LinguistTestBase):
         assert Language['Shell'] == Language['Gentoo Ebuild'].group
         assert Language['Shell'] == Language['Gentoo Eclass'].group
         assert Language['Shell'] == Language['Tcsh'].group
-
-        # Ensure everyone has a group
-        for language in Language.all():
-            assert language.group, "%s has no group" % language
 
     def test_search_term(self):
         assert 'perl' == Language['Perl'].search_term
@@ -164,7 +156,6 @@ class TestLanguage(LinguistTestBase):
         assert 'pot' == Language['Gettext Catalog'].search_term
         assert 'irc' == Language['IRC log'].search_term
         assert 'lhs' == Language['Literate Haskell'].search_term
-        assert 'ruby' == Language['Mirah'].search_term
         assert 'raw' == Language['Raw token data'].search_term
         assert 'bash' == Language['Shell'].search_term
         assert 'vim' == Language['VimL'].search_term
@@ -194,7 +185,7 @@ class TestLanguage(LinguistTestBase):
 
     def test_other(self):
         assert None == Language['Brainfuck'].type
-        assert None == Language['Makefile'].type
+        assert 'programming' == Language['Makefile'].type
 
     def test_searchable(self):
         assert True == Language['Ruby'].is_searchable
@@ -223,14 +214,14 @@ class TestLanguage(LinguistTestBase):
         assert Language['ApacheConf'] == Language.find_by_filename('httpd.conf')[0]
         assert [Language['ApacheConf']] == Language.find_by_filename('.htaccess')
         assert Language['Nginx'] == Language.find_by_filename('nginx.conf')[0]
-        assert ['C', 'C++', 'Objective-C'] == sorted(map(lambda l: l.name, Language.find_by_filename('foo.h')))
+        assert ['C', 'C++', 'Objective-C'] == sorted([l.name for l in Language.find_by_filename('foo.h')])
         assert [] == Language.find_by_filename('rb')
         assert [] == Language.find_by_filename('.rb')
         assert [] == Language.find_by_filename('.nkt')
         assert [Language['Shell']] == Language.find_by_filename('.bashrc')
         assert [Language['Shell']] == Language.find_by_filename('bash_profile')
         assert [Language['Shell']] == Language.find_by_filename('.zshrc')
-        assert [Language['Clojure']] == Language.find_by_filename('riemann.config')
+        assert [Language['Clojure'], Language['XML']] == Language.find_by_filename('riemann.config')
         assert [Language['HTML+Django']] == Language.find_by_filename('index.jinja')
 
     def test_find(self):
@@ -261,9 +252,9 @@ class TestLanguage(LinguistTestBase):
 
     def test_color(self):
         assert '#701516' == Language['Ruby'].color
-        assert '#3581ba' == Language['Python'].color
-        assert '#f15501' == Language['JavaScript'].color
-        assert '#31859c' == Language['TypeScript'].color
+        assert '#3572A5' == Language['Python'].color
+        assert '#f1e05a' == Language['JavaScript'].color
+        assert '#2b7489' == Language['TypeScript'].color
 
     def test_colors(self):
         Language['Ruby'] in Language.colors()
@@ -273,12 +264,10 @@ class TestLanguage(LinguistTestBase):
         assert 'c_cpp' == Language['C++'].ace_mode
         assert 'coffee' == Language['CoffeeScript'].ace_mode
         assert 'csharp' == Language['C#'].ace_mode
-        assert 'css' == Language['CSS'].ace_mode
         assert 'javascript' == Language['JavaScript'].ace_mode
 
     def test_ace_modes(self):
         assert Language['Ruby'] in Language.ace_modes()
-        assert Language['FORTRAN'] not in Language.ace_modes()
 
     def test_wrap(self):
         assert False == Language['C'].wrap

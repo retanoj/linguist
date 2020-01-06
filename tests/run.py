@@ -7,7 +7,7 @@ TEST_DIR = os.path.dirname(os.path.realpath(__file__))
 ROOT_DIR = os.path.dirname(TEST_DIR)
 sys.path.insert(0, ROOT_DIR)
 
-from unittest import main, TestSuite, findTestCases
+from unittest import main, TestSuite, TestLoader
 
 def get_test_module_names():
     file_names = os.listdir(os.curdir)
@@ -20,7 +20,8 @@ def suite():
 
     for module_name in get_test_module_names():
         module = __import__(module_name, fromlist=[module_name])
-        alltests.addTest(findTestCases(module))
+        s = TestLoader.loadTestsFromModule(module)
+        alltests.addTest(s)
 
     return alltests
 

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-from framework import LinguistTestBase, main
-from libs.md5 import MD5
+from .framework import LinguistTestBase, main
+from linguist.libs.md5 import MD5
 
 
 class TestMD5(LinguistTestBase):
