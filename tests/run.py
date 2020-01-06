@@ -20,7 +20,7 @@ def suite():
 
     for module_name in get_test_module_names():
         module = __import__(module_name, fromlist=[module_name])
-        s = TestLoader.loadTestsFromModule(module)
+        s = TestLoader().loadTestsFromModule(module)
         alltests.addTest(s)
 
     return alltests
