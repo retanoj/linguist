@@ -762,7 +762,7 @@ Gherkin:
   type: programming
   primary_extension: .feature
   aliases:
-  - cucumber
+  - Cucumber
   ace_mode: text
   color: "#5B2063"
 
